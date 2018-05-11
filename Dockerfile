@@ -19,6 +19,7 @@ RUN wget --no-verbose \
 	# CLI on path
 	ln -s /opt/rstudio-pm/bin/rspm /usr/local/bin/rspm
 
+COPY rstudio-pm.gcfg /etc/rstudio-pm/rstudio-pm.gcfg
 COPY setup.sh /setup.sh
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
